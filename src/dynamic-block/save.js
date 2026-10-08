@@ -3,7 +3,7 @@ import { useBlockProps } from '@wordpress/block-editor';
 export default function save() {
 	return (
 		<p {...useBlockProps.save()}>
-			{'Boilerplate - hello from the saved content!'}
+			{'dynamic-block - hello from the saved content!'}
 		</p>
 	);
 }
