@@ -24,6 +24,20 @@
     "showFeaturedImage": {
       "type": "boolean",
       "default": true
+    },
+    "orderBy": {
+      "type": "string",
+      "default": "date"
+    },
+    "order": {
+      "type": "string",
+      "default": "asc"
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     }
   },
   "render": "file:./render.php"

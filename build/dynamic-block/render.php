@@ -12,10 +12,18 @@
  * @package wpblocks
  */
 
-$recent_posts = wp_get_recent_posts([
-	'numberposts' => $attributes['numberposts'] ?? 2,
+$args = [
+	'numberposts' => $attributes['numberOfPosts'] ?? 2,
 	'post_status' => 'publish',
-]);
+	'orderby' => $attributes['orderBy'] ?? 'date',
+	'order' => $attributes['order'] ?? 'asc',
+];
+
+if (isset($attributes['categories']) && !empty($attributes['categories'])) {
+	$args['category__in'] = array_column($attributes['categories'], 'id');
+}
+
+$recent_posts = wp_get_recent_posts($args);
 ?>
 <ul <?php echo get_block_wrapper_attributes(); ?>>
 	<?php foreach ($recent_posts as $post) :

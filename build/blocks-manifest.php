@@ -29,6 +29,20 @@ return array(
 			'showFeaturedImage' => array(
 				'type' => 'boolean',
 				'default' => true
+			),
+			'orderBy' => array(
+				'type' => 'string',
+				'default' => 'date'
+			),
+			'order' => array(
+				'type' => 'string',
+				'default' => 'asc'
+			),
+			'categories' => array(
+				'type' => 'array',
+				'items' => array(
+					'type' => 'object'
+				)
 			)
 		),
 		'render' => 'file:./render.php'
