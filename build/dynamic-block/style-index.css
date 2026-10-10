@@ -1,10 +1,36 @@
 /*!*****************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/dynamic-block/style.scss ***!
   \*****************************************************************************************************************************************************************************************************************************************************/
-.wp-block-create-block-dynamic-block {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
+.wp-block-wpblocks-dynamic-block {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+.wp-block-wpblocks-dynamic-block li img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  aspect-ratio: 2/3;
+}
+.wp-block-wpblocks-dynamic-block li a {
+  color: inherit;
+}
+.wp-block-wpblocks-dynamic-block li h5 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+.wp-block-wpblocks-dynamic-block time {
+  font-size: 0.875rem;
+  color: #666;
+}
+.wp-block-wpblocks-dynamic-block p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  margin: 15px 0 0;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

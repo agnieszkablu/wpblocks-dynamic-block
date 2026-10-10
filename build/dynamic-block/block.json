@@ -15,5 +15,16 @@
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",
-  "viewScript": "file:./view.js"
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "numberOfPosts": {
+      "type": "number",
+      "default": 2
+    },
+    "showFeaturedImage": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "render": "file:./render.php"
 }

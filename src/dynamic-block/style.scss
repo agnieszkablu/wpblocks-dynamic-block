@@ -1,5 +1,38 @@
-.wp-block-create-block-dynamic-block {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+.wp-block-wpblocks-dynamic-block {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 30px;
+
+	li {
+		 img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 15px;
+			aspect-ratio: 2/3;
+		 }
+
+		 a {
+			color: inherit;
+		 }
+
+		 h5 {
+			font-size: 1.25rem;
+			margin-bottom: 10px;
+		 }
+	}
+
+	time {
+		font-size: 0.875rem;
+		color: #666;
+	}
+
+	p {
+		font-size: 1rem;
+		color: #333;
+		line-height: 1.5;
+		margin: 15px 0 0;
+	}
 }
